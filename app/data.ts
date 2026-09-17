@@ -28,7 +28,7 @@ export const navigation = [
   { label: "Scarves", href: "/collections?category=Scarves" },
   { label: "Men's", href: "/collections?category=Men" },
   { label: "Home", href: "/" },
-  { label: "Treasures of India", href: "/#featured" },
+  { label: "Treasures of Nepal", href: "/#featured" },
   {
     label: "Shop By",
     href: "/collections",
