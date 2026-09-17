@@ -13,7 +13,7 @@ export const siteConfig = {
   showAnnouncement: true,
   heroVideo: false,
 };
-const asset = (n: number) => `/images/home/editorial-${n}.webp`;
+const asset = (n: number) => `/Img/IMG-${n}.jpg`;
 export const navigation = [
   {
     label: "Shawls",
@@ -44,7 +44,7 @@ export const recognition = [
     title: "A craft passed from hand to hand",
     description:
       "The beauty of Pashmina lives in the knowledge shared across generations of makers.",
-    image: asset(1),
+    image: "/images/nep-1.png",
     alt: "Editorial photograph of plum shawl and textile pattern",
   },
   {
@@ -52,22 +52,22 @@ export const recognition = [
     title: "An invitation to slow down",
     description:
       "We celebrate the quiet moments of weaving, finishing, and wearing something made to last.",
-    image: asset(2),
+    image: "/images/nep-1.png",
     alt: "Artisan hands working at a traditional loom",
   },
 ];
 export const crafts = {
   Women: [
-    { title: "Solid Pashmina", image: asset(1) },
-    { title: "Ombre Pashmina", image: asset(2) },
-    { title: "Patterned Pashmina", image: asset(3) },
-    { title: "Reversible Pashmina", image: asset(4) },
+    { title: "Solid Pashmina", image: asset(22) },
+    { title: "Ombre Pashmina", image: asset(24) },
+    { title: "Patterned Pashmina", image: asset(45) },
+    { title: "Reversible Pashmina", image: asset(46) },
   ],
   Men: [
-    { title: "Classic Wraps", image: asset(4) },
-    { title: "Woven Scarves", image: asset(3) },
-    { title: "Evening Shawls", image: asset(2) },
-    { title: "Travel Layers", image: asset(1) },
+    { title: "Classic Wraps", image: asset(10) },
+    { title: "Woven Scarves", image: asset(13) },
+    { title: "Evening Shawls", image: asset(3) },
+    { title: "Travel Layers", image: asset(46) },
   ],
 };
 export const heritage = [
@@ -87,7 +87,7 @@ export const heritage = [
     "A quiet glimmer of metallic thread.",
     "Colour and pattern brought together on the loom.",
   ][i],
-  image: asset((i % 4) + 1),
+  image: asset((i % 60) + 1),
   href: "/collections",
   alt: `Editorial photograph of textile for ${title}`,
 }));
@@ -96,14 +96,14 @@ export const featured = [
     title: "The Heirloom Edit",
     description:
       "Special pieces chosen for their artistry and enduring beauty.",
-    image: "/images/banner1.webp",
+    image: "/images/Img/IMG-67.jpg",
     alt: "Ornate handmade rug displayed in a sunlit heritage interior",
     href: "/collections",
   },
   {
     title: "Objects of Warmth",
     description: "Thoughtful accents for the spaces and moments we share.",
-    image: "/images/banner2.webp",
+    image: "/images/Img/IMG-60.jpg",
     alt: "Ornate handmade rug displayed in a sunlit heritage interior",
     href: "/collections",
   },
@@ -121,9 +121,9 @@ export const products = [
   name,
   category: ["Shawls", "Wraps", "Shawls", "Scarves", "Men", "Wraps"][i],
   material: "Handwoven Pashmina",
-  image: `/images/pashmina${(i % 3) + 1}.webp`,
+  image: `/images/pashmina${(i % 27) + 1}.webp`,
   images: [0, 1, 2].map(
-    (offset) => `/images/pashmina${((i + offset) % 3) + 1}.webp`,
+    (offset) => `/images/Img${((i + offset) % 60) + 1}.jpg`,
   ),
   alt: `Pashmina photograph for ${name}`,
   href: `/collections/${name.toLowerCase().replaceAll(" ", "-")}`,
@@ -160,7 +160,7 @@ export const articles = [
     category: "CRAFT",
     date: "12 AUG 2026",
     excerpt: "Tracing the patient journey from fibre to finished shawl.",
-    image: asset(4),
+    image: asset(37),
     alt: "Editorial photograph of woven textile",
     href: "#editorial",
   },
@@ -169,7 +169,7 @@ export const articles = [
     category: "STORIES",
     date: "28 JUL 2026",
     excerpt: "What a maker sees in every small decision.",
-    image: asset(2),
+    image: asset(35),
     alt: "Editorial photograph of patterned textile",
     href: "#editorial",
   },
@@ -178,7 +178,7 @@ export const articles = [
     category: "GUIDE",
     date: "10 JUN 2026",
     excerpt: "Simple ways to care for a piece made to last.",
-    image: asset(3),
+    image: asset(33),
     alt: "Editorial photograph of burgundy textile",
     href: "#editorial",
   },

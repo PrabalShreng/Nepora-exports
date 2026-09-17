@@ -74,7 +74,7 @@ export default function Home() {
           </p>
           <i className="divider" />
         </section>
-        <section className="press" aria-label="Recognized by">
+        {/* <section className="press" aria-label="Recognized by">
           <span>RECOGNIZED BY</span>
           <div className="press-window">
             <div className="press-track">
@@ -89,7 +89,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="recognition section-pad container">
           {title("A STORY BEYOND THE LOOM", "The beauty of being seen")}
           <Carousel
@@ -151,7 +151,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section className="featured section-pad" id="featured">
+        {/* <section className="featured section-pad" id="featured">
           <div className="container">
             <div className="featured-heading">
               <span className="eyebrow">BEYOND THE SHAWL</span>
@@ -177,7 +177,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="products section-pad container" id="products">
           {title("A CLOSER LOOK", "Selected Pashmina")}
           <ProductCarousel products={products} />
