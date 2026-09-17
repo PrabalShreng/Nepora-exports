@@ -59,7 +59,7 @@ export function HeroMedia() {
         loop
         playsInline
         preload="none"
-        poster="/images/Img/IMG-67.jpg"
+        poster="/Img/IMG-70.jpg"
         aria-label="Nepora Exports collection film"
       >
         <source

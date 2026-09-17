@@ -61,7 +61,7 @@ export const crafts = {
     { title: "Solid Pashmina", image: asset(22) },
     { title: "Ombre Pashmina", image: asset(24) },
     { title: "Patterned Pashmina", image: asset(45) },
-    { title: "Reversible Pashmina", image: asset(46) },
+    { title: "Reversible Pashmina", image: asset(49) },
   ],
   Men: [
     { title: "Classic Wraps", image: asset(10) },
