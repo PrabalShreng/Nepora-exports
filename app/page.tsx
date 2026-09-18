@@ -1,200 +1,293 @@
-export const siteConfig = {
-  brand: "Nepora Exports",
-  email: "neporaexports@gmail.com",
-  phone: "+977 9860086222",
-  whatsapp: "/contact",
-  social: {
-    instagram: "#contact-footer",
-    facebook: "#contact-footer",
-    linkedin: "#contact-footer",
-  },
-  showReviews: true,
-  showContact: true,
-  showAnnouncement: true,
-  heroVideo: false,
-};
-const asset = (n: number) => `/Img/IMG-${n}.jpg`;
-export const navigation = [
-  {
-    label: "Shawls",
-    href: "/collections?category=Shawls",
-    children: ["Solid Pashmina", "Ombre Pashmina", "Patterned Pashmina"],
-  },
-  {
-    label: "Wraps",
-    href: "/collections?category=Wraps",
-    children: ["Everyday Wraps", "Evening Wraps"],
-  },
-  { label: "Scarves", href: "/collections?category=Scarves" },
-  { label: "Men's", href: "/collections?category=Men" },
-  { label: "Home", href: "/" },
-  { label: "Treasures of Nepal", href: "/#featured" },
-  {
-    label: "Shop By",
-    href: "/collections",
-    children: ["Heritage", "Most Viewed"],
-  },
-  { label: "About Us", href: "/about" },
-  { label: "Editorial", href: "/#editorial" },
-];
-export const announcements = ["Guaranteed Authentic Pashmina, Tailored to Your Requirements", "Kathmandu, Nepal"];
-export const recognition = [
-  {
-    year: "2024",
-    title: "A craft passed from hand to hand",
-    description:
-      "The beauty of Pashmina lives in the knowledge shared across generations of makers.",
-    image: "/images/nep-1.png",
-    alt: "Editorial photograph of plum shawl and textile pattern",
-  },
-  {
-    year: "2025",
-    title: "An invitation to slow down",
-    description:
-      "We celebrate the quiet moments of weaving, finishing, and wearing something made to last.",
-    image: "/Img/IMG-69.jpg",
-    alt: "Artisan hands working at a traditional loom",
-  },
-];
-export const featured = [
-  {
-    title: "The Heirloom Edit",
-    description:
-      "Special pieces chosen for their artistry and enduring beauty.",
-    image: "/Img/IMG-25.jpg",
-    alt: "Ornate handmade rug displayed in a sunlit heritage interior",
-    href: "/collections",
-  },
-  {
-    title: "Objects of Warmth",
-    description: "Thoughtful accents for the spaces and moments we share.",
-    image: "/Img/IMG-26.jpg",
-    alt: "Ornate handmade rug displayed in a sunlit heritage interior",
-    href: "/collections",
-  },
-];
-// export const artisans = [
-//   {
-//     name: "Zahoor Ahmad",
-//     craft: "Master Weaver",
-//     image: asset(1),
-//     alt: "Folded burgundy shawl, artisan portrait placeholder",
-//   },
-//   {
-//     name: "Nusrat Begum",
-//     craft: "Needlework Artist",
-//     image: asset(2),
-//     alt: "Artisan hands at a loom, portrait placeholder",
-//   },
-//   {
-//     name: "Irfan Ali",
-//     craft: "Pattern Maker",
-//     image: asset(3),
-//     alt: "Model in an ivory shawl, artisan portrait placeholder",
-//   },
-//   {
-//     name: "Meher Khan",
-//     craft: "Finishing Artisan",
-//     image: asset(4),
-//     alt: "Patterned textile on a chair, artisan portrait placeholder",
-//   },
-// ];
-export const articles = [
-  {
-    title: "Artisan Heritage",
-    excerpt: "Handwoven with generations of craftsmanship, every piece celebrates Nepal's rich textile tradition.",
-    image: asset(37),
-    alt: "Editorial photograph of woven textile",
-    href: "#editorial",
-  },
-  {
-    title: "Exceptional Softness",
-    excerpt: "Crafted from premium natural fibers to deliver unmatched comfort and refined elegance.",
-    image: asset(35),
-    alt: "Editorial photograph of patterned textile",
-    href: "#editorial",
-  },
-  {
-    title: "Signature Weaves",
-    excerpt: "Distinctive textures and intricate patterns define the beauty of authentic luxury.",
-    image: asset(33),
-    alt: "Editorial photograph of burgundy textile",
-    href: "#editorial",
-  },
-  {
-    title: "Luxury Without Compromise",
-    excerpt: "Timeless pashmina designed to be treasured for years, combining elegance with lasting quality.",
-    image: asset(58),
-    alt: "Editorial photograph of burgundy textile",
-    href: "#editorial",
-  },
-];
-export const faqs = [
-  {
-    question: "What is Pashmina?",
-    answer:
-      "Pashmina is a fine cashmere fibre traditionally hand-spun and woven into shawls and wraps. Its softness and light warmth make it treasured for generations.",
-  },
-  {
-    question: "How should I care for a Pashmina?",
-    answer:
-      "Store it clean and folded in a breathable bag. Air it between wears and use a specialist cleaner when needed.",
-  },
-  {
-    question: "Is each piece handmade?",
-    answer:
-      "Our collection celebrates handwork, from weaving to detailed finishing. Specific techniques can vary by piece.",
-  },
-  {
-    question: "How do I style a Pashmina shawl?",
-    answer:
-      "Drape it loosely over the shoulders, wrap it once around the neck, or fold it as a light evening layer.",
-  },
-  {
-    question: "What makes a heritage weave different?",
-    answer:
-      "Heritage weaves use distinctive patterns and techniques that take considerable time and practiced skill to make.",
-  },
-  {
-    question: "Can I enquire from outside Nepal?",
-    answer:
-      "Yes. Visitors from any country can contact us to learn more about the collection and its craft.",
-  },
-  {
-    question: "Can I give a Pashmina as a gift?",
-    answer:
-      "Yes. A handwoven Pashmina is a thoughtful gift for milestones and celebrations.",
-  },
-  {
-    question: "What is the difference between a shawl and a scarf?",
-    answer:
-      "Shawls are generally larger and can cover the shoulders, while scarves are narrower and typically worn around the neck.",
-  },
-];
-export const footerGroups = [
-  {
-    title: "Collections",
-    links: [
-      { label: "All Pieces", href: "/collections" },
-      { label: "Shawls", href: "/collections?category=Shawls" },
-      { label: "Wraps", href: "/collections?category=Wraps" },
-      { label: "Scarves", href: "/collections?category=Scarves" },
-    ],
-  },
-  {
-    title: "About",
-    links: [
-      { label: "Our Story", href: "/about" },
-      { label: "Our Artisans", href: "/#artisans" },
-      { label: "Editorial", href: "/#editorial" },
-    ],
-  },
-  {
-    title: "Help",
-    links: [
-      { label: "Contact", href: "/contact" },
-      { label: "FAQs", href: "/#faq" },
-      { label: "Collection enquiries", href: "/contact" },
-    ],
-  },
-];
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import {
+  Header,
+  HeroMedia,
+  Carousel,
+  Crafts,
+  ProductCarousel,
+  Faq,
+  FloatingActions,
+} from "./ui";
+import { SiteFooter } from "./components/site-footer";
+import {
+  siteConfig,
+  recognition,
+  featured,
+  // artisans,
+  articles,
+  faqs,
+} from "./data";
+import {
+  craftProducts,
+  oneOfAKindProducts,
+  selectedPashminaProducts,
+} from "./productdata";
+const img = (src: string, alt: string) => (
+  <Image
+    src={src}
+    alt={alt}
+    fill
+    sizes="(max-width: 640px) 78vw, (max-width: 1024px) 45vw, 30vw"
+    className="object-cover"
+  />
+);
+const title = (tag: string, name: string) => (
+  <div className="section-heading">
+    <span className="eyebrow">{tag}</span>
+    <h2>{name}</h2>
+    <i />
+  </div>
+);
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <main className="home-page">
+        <section className="hero" aria-label="The art of handwoven Pashmina">
+          <HeroMedia />
+          <div className="hero-shade" />
+          <div className="hero-copy">
+            <span className="eyebrow">HANDWOVEN IN THE HIMALAYAS</span>
+            <p>
+              Where every thread
+              <br />
+              <em>holds a story.</em>
+            </p>
+            <a href="#crafts">
+              Explore the collection <ArrowUpRight size={17} />
+            </a>
+          </div>
+          <span className="hero-index">
+            01 / 03 &nbsp; — &nbsp; THE ART OF SLOW LUXURY
+          </span>
+        </section>
+        <section className="intro section-pad container">
+          <span className="eyebrow">AN HEIRLOOM, NEVER AN ORDINARY WRAP</span>
+          <h1>
+            Handmade with patience.
+            <br />
+            <em>Worn for a lifetime.</em>
+          </h1>
+          <p>
+            At Nepora Exports, we honour the quiet artistry of Himalayan
+            weaving. Each Pashmina begins with remarkable fibre and is finished
+            by hands that have known this craft for generations.
+          </p>
+          <i className="divider" />
+        </section>
+        {/* <section className="press" aria-label="Recognized by">
+          <span>RECOGNIZED BY</span>
+          <div className="press-window">
+            <div className="press-track">
+              {[0, 1].map((n) => (
+                <div className="press-set" aria-hidden={n === 1} key={n}>
+                  <b>ATELIER</b>
+                  <b>THE JOURNAL</b>
+                  <b>OBJECT &amp; FORM</b>
+                  <b>MAISON</b>
+                  <b>CRAFT REVIEW</b>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section> */}
+        <section className="recognition section-pad container">
+          {title("A STORY BEYOND THE LOOM", "The beauty of being seen")}
+          <Carousel
+            label="Recognition stories"
+            kind="recognition"
+            items={recognition.map((v, i) => (
+              <article className="recognition-slide" key={v.title}>
+                <div className="recognition-image image-frame">
+                  {img(v.image, v.alt)}
+                </div>
+                <div className="recognition-copy">
+                  {/* <span className="eyebrow">
+                    {v.year} / THE NEPORA EXPORTS JOURNAL
+                  </span> */}
+                  <h3>{v.title}</h3>
+                  <p>{v.description}</p>
+                  <span className="slide-number">
+                    {String(i + 1).padStart(2, "0")} /{" "}
+                    {String(recognition.length).padStart(2, "0")}
+                  </span>
+                </div>
+              </article>
+            ))}
+          />
+        </section>
+        <section className="crafts section-pad" id="crafts">
+          <div className="container">
+            {title("DISCOVER THE COLLECTION", "Our Crafts")}
+            <Crafts data={craftProducts} />
+          </div>
+        </section>
+        <section className="heritage section-pad container" id="heritage">
+          <div className="heritage-title">
+            <span className="back-word" aria-hidden="true">
+              HERITAGE
+            </span>
+            {title("THE ART OF THE EXCEPTIONAL", "One-of-a-Kind Pashmina")}
+            <p>
+              Six expressions of an enduring craft, each with its own natural colour.
+            </p>
+          </div>
+          <div className="heritage-grid">
+            {oneOfAKindProducts.map((v, i) => (
+              <article
+                className={`heritage-card offset-${i % 3}`}
+                key={v.title}
+              >
+                <a href={v.href} className="image-frame heritage-image">
+                  {img(v.image, v.alt)}
+                  <span className="sr-only">Explore {v.title}</span>
+                </a>
+                <h3>{v.title}</h3>
+                <p>{v.description}</p>
+                <a className="text-link" href={v.href}>
+                  View Piece <ArrowUpRight size={17} />
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
+        {/* <section className="featured section-pad" id="featured">
+          <div className="container">
+            <div className="featured-heading">
+              <span className="eyebrow">BEYOND THE SHAWL</span>
+              <h2>Living heritage</h2>
+              <p>Objects that carry the warmth of a human hand.</p>
+            </div>
+            <div className="featured-grid">
+              {featured.map((v) => (
+                <article className="featured-card" key={v.title}>
+                  <a href={v.href} className="featured-image image-frame">
+                    {img(v.image, v.alt)}
+                    <span className="sr-only">Explore {v.title}</span>
+                  </a>
+                  <div>
+                    <span className="eyebrow">THE NEPORA EXPORTS EDIT</span>
+                    <h3>{v.title}</h3>
+                    <p>{v.description}</p>
+                    <a className="text-link" href={v.href}>
+                      Explore Collection <ArrowUpRight size={17} />
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section> */}
+        <section className="products section-pad container" id="products">
+          {title("A CLOSER LOOK", "Selected Pashmina")}
+          <ProductCarousel products={selectedPashminaProducts} />
+        </section>
+        {/* <section className="artisans section-pad" id="artisans">
+          <div className="container">
+            {title("THE HANDS BEHIND THE HEIRLOOM", "Our Artisans")}
+            <p className="section-intro">
+              From the first careful spin to the final flourish, our artisans
+              give each piece its character. Their patience is woven into every
+              detail.
+            </p>
+            <Carousel
+              label="Artisan portraits"
+              kind="cards"
+              items={artisans.map((v) => (
+                <article className="artisan-card" key={v.name}>
+                  <div className="portrait image-frame">
+                    {img(v.image, v.alt)}
+                  </div>
+                  <h3>{v.name}</h3>
+                  <p>{v.craft}</p>
+                </article>
+              ))}
+            />
+            <a className="outline-button" href="#story">
+              Meet Our Artisans <ArrowUpRight size={16} />
+            </a>
+          </div>
+        </section> */}
+        <section className="editorial section-pad container" id="editorial">
+          <div className="editorial-top">
+            {title("NOTES FROM OUR WORLD", "Handcrafted Excellence")}
+            <a className="text-link" href="#editorial">
+              View All Editorials <ArrowUpRight size={17} />
+            </a>
+          </div>
+          <Carousel
+            label="Editorial articles"
+            kind="cards"
+            items={articles.map((v) => (
+              <article className="article-card" key={v.title}>
+                <a href={v.href} className="article-image image-frame">
+                  {img(v.image, v.alt)}
+                  <span className="sr-only">Read {v.title}</span>
+                </a>
+                {/* <span className="eyebrow">
+                  {v.category} — {v.date}
+                </span> */}
+                <h3>{v.title}</h3>
+                <p>{v.excerpt}</p>
+                <a className="text-link" href={v.href}>
+                  Read Story <ArrowUpRight size={17} />
+                </a>
+              </article>
+            ))}
+          />
+        </section>
+        <section className="faq section-pad" id="faq">
+          <div className="container">
+            {title("A LITTLE MORE TO KNOW", "Frequently Asked Questions")}
+            <Faq items={faqs} />
+          </div>
+        </section>
+        <section className="story section-pad container" id="story">
+          <span className="eyebrow">OUR STORY</span>
+          <h2>Art of Pashmina</h2>
+          <p>
+            True luxury is woven with patience, shaped by tradition, and perfected by skilled hands. At Nepora Exports, we transform the finest Himalayan fibers into timeless pashmina that reflects elegance, authenticity, and enduring craftsmanship.
+          </p>
+        </section>
+      </main>
+      <SiteFooter />
+      <FloatingActions />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((v) => ({
+              "@type": "Question",
+              name: v.question,
+              acceptedAnswer: { "@type": "Answer", text: v.answer },
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://neporaexports.com.np",
+            "@graph": [
+              {
+                "@type": "Organization",
+                name: "Nepora Exports Pvt. Ltd.",
+                url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://neporaexports@gmail.com",
+                email: siteConfig.email,
+              },
+              {
+                "@type": "WebSite",
+                name: "Nepora Exports Pvt. Ltd.",
+                url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://neporaexports.com.np",
+              },
+            ],
+          }),
+        }}
+      />
+    </>
+  );
+}
