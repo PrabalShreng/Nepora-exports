@@ -128,8 +128,7 @@ export default function Home() {
             </span>
             {title("THE ART OF THE EXCEPTIONAL", "One-of-a-Kind Pashmina")}
             <p>
-              Six expressions of an enduring craft, each with its own language
-              of detail.
+              Six expressions of an enduring craft, each with its own natural colour.
             </p>
           </div>
           <div className="heritage-grid">
@@ -182,7 +181,7 @@ export default function Home() {
           {title("A CLOSER LOOK", "Selected Pashmina")}
           <ProductCarousel products={products} />
         </section>
-        <section className="artisans section-pad" id="artisans">
+        {/* <section className="artisans section-pad" id="artisans">
           <div className="container">
             {title("THE HANDS BEHIND THE HEIRLOOM", "Our Artisans")}
             <p className="section-intro">
@@ -207,7 +206,7 @@ export default function Home() {
               Meet Our Artisans <ArrowUpRight size={16} />
             </a>
           </div>
-        </section>
+        </section> */}
         <section className="editorial section-pad container" id="editorial">
           <div className="editorial-top">
             {title("NOTES FROM OUR WORLD", "The Editorial")}
@@ -273,18 +272,18 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
+            "@context": "https://neporaexports.com.np",
             "@graph": [
               {
                 "@type": "Organization",
-                name: "Nepora Exports",
-                url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
+                name: "Nepora Exports Pvt. Ltd.",
+                url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://neporaexports@gmail.com",
                 email: siteConfig.email,
               },
               {
                 "@type": "WebSite",
-                name: "Nepora Exports",
-                url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
+                name: "Nepora Exports Pvt. Ltd.",
+                url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://neporaexports.com.np",
               },
             ],
           }),
