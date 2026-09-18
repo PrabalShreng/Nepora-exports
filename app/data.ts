@@ -76,9 +76,9 @@ export const crafts = {
   ],
 };
 export const heritage = [
-  // Choose each product's image below: asset(1) uses /Img/IMG-1.jpg.
+  // Choose each product's image below: asset(1) uses /Img/IMG-1.jpg hello.
   {
-    title: "Classic Border Pashmina Stole",
+    title: "old Border Pashmina Stole",
     description: "A soft woven pashmina featuring elegant contrasting border stripes, offering a timeless look with lightweight warmth and a luxurious drape.",
     image: asset(1),
   },
