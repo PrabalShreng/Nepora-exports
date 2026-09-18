@@ -74,25 +74,41 @@ export const crafts = {
   ],
 };
 export const heritage = [
-  "Border / Palla",
-  "All Over / Jaal",
-  "Jamawar",
-  "Kalamkari",
-  "Zari / Tilla",
-  "Kani",
-].map((title, i) => ({
-  title,
-  description: [
-    "A graceful border that frames every gesture.",
-    "An all-over pattern of patient, intricate detail.",
-    "Rich motifs with a story in every weave.",
-    "Hand-drawn artistry meets the softness of Pashmina.",
-    "A quiet glimmer of metallic thread.",
-    "Colour and pattern brought together on the loom.",
-  ][i],
-  image: "/Img/IMG-49.jpg",
+  // Choose each product's image below: asset(1) uses /Img/IMG-1.jpg.
+  {
+    title: "Border / Palla",
+    description: "A graceful border that frames every gesture.",
+    image: asset(1),
+  },
+  {
+    title: "All Over / Jaal",
+    description: "An all-over pattern of patient, intricate detail.",
+    image: asset(9),
+  },
+  {
+    title: "Jamawar",
+    description: "Rich motifs with a story in every weave.",
+    image: asset(16),
+  },
+  {
+    title: "Kalamkari",
+    description: "Hand-drawn artistry meets the softness of Pashmina.",
+    image: asset(4),
+  },
+  {
+    title: "Zari / Tilla",
+    description: "A quiet glimmer of metallic thread.",
+    image: asset(5),
+  },
+  {
+    title: "Kani",
+    description: "Colour and pattern brought together on the loom.",
+    image: asset(6),
+  },
+].map((product) => ({
+  ...product,
   href: "/collections",
-  alt: `Editorial photograph of textile for ${title}`,
+  alt: `Editorial photograph of textile for ${product.title}`,
 }));
 export const featured = [
   {
