@@ -44,7 +44,7 @@ export const craftProducts = {
       descriptionImages: [asset(1), asset(2), asset(3)],
     },
     {
-      slug: "craft-multicolor-handwoven-striped-pashmina",
+      slug: "aa craft-multicolor-handwoven-striped-pashmina",
       name: "Multicolor Handwoven Striped Pashmina",
       category: "Shawls",
       material: "Handwoven Pashmina",
