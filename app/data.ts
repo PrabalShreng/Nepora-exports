@@ -128,22 +128,46 @@ export const featured = [
   },
 ];
 export const products = [
-  "The Saffron Dawn Shawl",
-  "The Kashmir Bloom Wrap",
-  "The Evening Plum Pashmina",
-  "The Willow Weave Scarf",
-  "The Rose Mist Shawl",
-  "The Heritage Border Wrap",
-].map((name, i) => ({
+  // Set each product's gallery here. Use asset(1) for /Img/IMG-1.jpg.
+  // The first image is also the collection card image. Keep at least one image.
+  {
+    name: "The Saffron Dawn Shawl",
+    category: "Shawls",
+    images: [asset(1), asset(2), asset(3)],
+  },
+  {
+    name: "The Kashmir Bloom Wrap",
+    category: "Wraps",
+    images: [asset(2), asset(3), asset(4)],
+  },
+  {
+    name: "The Evening Plum Pashmina",
+    category: "Scarves",
+    images: [asset(3), asset(4), asset(5)],
+  },
+  {
+    name: "The Willow Weave Scarf",
+    category: "Men",
+    images: [asset(4), asset(5), asset(6)],
+  },
+  {
+    name: "The Rose Mist Shawl",
+    category: "Wraps",
+    images: [asset(5), asset(6), asset(7)],
+  },
+  {
+    name: "The Heritage Border Wrap",
+    category: "Wraps",
+    images: [asset(6), asset(7), asset(8)],
+  },
+].map(({ name, category, images }, i) => ({
   id: `p${i}`,
   slug: name.toLowerCase().replaceAll(" ", "-"),
   name,
-  category: ["Shawls", "Wraps", "Scarves", "Men", "Wraps"][i],
+  category,
   material: "Handwoven Pashmina",
-  image: `/images/pashmina${(i % 27) + 1}.webp`,
-  images: [0, 1, 2].map(
-    (offset) => `/images/pashmina${((i + offset) % 27) + 1}.webp`,
-  ),
+  image: images[0],
+  images,
   alt: `Pashmina photograph for ${name}`,
   href: `/collections/${name.toLowerCase().replaceAll(" ", "-")}`,
 }));
