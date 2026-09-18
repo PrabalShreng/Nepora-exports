@@ -58,9 +58,9 @@ export default function Home() {
               Explore the collection <ArrowUpRight size={17} />
             </a>
           </div>
-          <span className="hero-index">
+          {/* <span className="hero-index">
             01 / 03 &nbsp; — &nbsp; THE ART OF SLOW LUXURY
-          </span>
+          </span> */}
         </section>
         <section className="intro section-pad container">
           <span className="eyebrow">AN HEIRLOOM, NEVER AN ORDINARY WRAP</span>
