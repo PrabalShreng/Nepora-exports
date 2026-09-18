@@ -56,63 +56,6 @@ export const recognition = [
     alt: "Artisan hands working at a traditional loom",
   },
 ];
-<<<<<<< HEAD
-=======
-export const crafts = {
-  Women: [
-    { title: "Basket Weave Pashmina", image: asset(61) },
-    { title: "Multicolor Handwoven Striped Pashmina", image: asset(60) },
-    { title: "Diamond Weave Pashmina", image: asset(5) },
-    { title: "Plain Solid Pashmina Shawl", image: asset(49) },
-    { title: "Plain Weave Pashmina Shawl", image: asset(30) },
-    { title: "Solid Pashmina Shawl", image: asset(27) },
-    { title: "Ring shawl Pashmina", image: asset(31) },
-  ],
-  Men: [
-    { title: "Reversible Two-Tone Pashmina", image: asset(7) },
-    { title: "Windowpane Check Pashmina", image: asset(13) },
-    { title: "Solid Twill Weave Pashmina", image: asset(50) },
-    { title: "Herringbone Weave Pashmina", image: asset(46) },
-  ],
-};
-export const heritage = [
-  // Choose each product's image below: asset(1) uses /Img/IMG-1.jpg hello.
-  {
-    title: "old Border Pashmina Stole",
-    description: "A soft woven pashmina featuring elegant contrasting border stripes, offering a timeless look with lightweight warmth and a luxurious drape.",
-    image: asset(1),
-  },
-  {
-    title: "Herringbone Color-Block Pashmina Stole",
-    description: "Crafted with a refined herringbone weave and modern color-block design, this versatile pashmina combines classic craftsmanship with contemporary style.",
-    image: asset(6),
-  },
-  {
-    title: "Checkered Pashmina Stole",
-    description: "A premium woven pashmina with a subtle oversized check pattern, designed for everyday elegance, comfort, and all-season wear..",
-    image: asset(12),
-  },
-  {
-    title: "Floral Print Pashmina Stole",
-    description: "A lightweight pashmina adorned with vibrant floral prints, adding a fresh, feminine touch while remaining soft, breathable, and easy to style.",
-    image: asset(15),
-  },
-  {
-    title: "Ombre Pashmina Stole",
-    description: "Featuring a graceful gradient (ombre) effect with delicate fringed edges, this pashmina offers a sophisticated blend of color and luxurious softness.",
-    image: asset(17),
-  },
-  {
-    title: "Watercolor Floral Pashmina Stole",
-    description: "A beautifully printed pashmina showcasing artistic watercolor floral motifs, perfect for adding effortless elegance and lightweight comfort to any outfit.",
-    image: asset(20),
-  },
-].map((product) => ({
-  ...product,
-  href: "/collections",
-  alt: `Editorial photograph of textile for ${product.title}`,
-}));
->>>>>>> 0147c06 (text change)
 export const featured = [
   {
     title: "The Heirloom Edit",
