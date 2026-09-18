@@ -95,6 +95,9 @@ h3 {
 .section-pad {
   padding-block: var(--section-space);
 }
+.home-page > .section-pad {
+  padding-block: 48px;
+}
 .eyebrow {
   display: block;
   font:
@@ -643,7 +646,7 @@ h3 {
 .heritage-title {
   position: relative;
   text-align: center;
-  margin-bottom: 46px;
+  margin-bottom: 32px;
 }
 .heritage-title .section-heading {
   position: relative;
@@ -666,13 +669,13 @@ h3 {
 .heritage-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 48px 24px;
+  gap: 32px 24px;
 }
 .heritage-card.offset-1 {
-  padding-top: 65px;
+  padding-top: 36px;
 }
 .heritage-card.offset-2 {
-  padding-top: 130px;
+  padding-top: 72px;
 }
 .heritage-image {
   aspect-ratio: 4/5;
@@ -1122,6 +1125,9 @@ h3 {
   .section-pad {
     padding-block: 70px;
   }
+  .home-page > .section-pad {
+    padding-block: 32px;
+  }
   .heritage-grid,
   .faq-grid {
     grid-template-columns: 1fr;
@@ -1131,7 +1137,7 @@ h3 {
     padding-top: 0;
   }
   .heritage-grid {
-    gap: 34px;
+    gap: 28px;
   }
   .back-word {
     display: none;

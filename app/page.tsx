@@ -13,14 +13,16 @@ import { SiteFooter } from "./components/site-footer";
 import {
   siteConfig,
   recognition,
-  crafts,
-  heritage,
   featured,
-  products,
   // artisans,
   articles,
   faqs,
 } from "./data";
+import {
+  craftProducts,
+  oneOfAKindProducts,
+  selectedPashminaProducts,
+} from "./productdata";
 const img = (src: string, alt: string) => (
   <Image
     src={src}
@@ -41,7 +43,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="home-page">
         <section className="hero" aria-label="The art of handwoven Pashmina">
           <HeroMedia />
           <div className="hero-shade" />
@@ -118,7 +120,7 @@ export default function Home() {
         <section className="crafts section-pad" id="crafts">
           <div className="container">
             {title("DISCOVER THE COLLECTION", "Our Crafts")}
-            <Crafts data={crafts} />
+            <Crafts data={craftProducts} />
           </div>
         </section>
         <section className="heritage section-pad container" id="heritage">
@@ -132,7 +134,7 @@ export default function Home() {
             </p>
           </div>
           <div className="heritage-grid">
-            {heritage.map((v, i) => (
+            {oneOfAKindProducts.map((v, i) => (
               <article
                 className={`heritage-card offset-${i % 3}`}
                 key={v.title}
@@ -144,7 +146,7 @@ export default function Home() {
                 <h3>{v.title}</h3>
                 <p>{v.description}</p>
                 <a className="text-link" href={v.href}>
-                  View Collection <ArrowUpRight size={17} />
+                  View Piece <ArrowUpRight size={17} />
                 </a>
               </article>
             ))}
@@ -179,7 +181,7 @@ export default function Home() {
         </section> */}
         <section className="products section-pad container" id="products">
           {title("A CLOSER LOOK", "Selected Pashmina")}
-          <ProductCarousel products={products} />
+          <ProductCarousel products={selectedPashminaProducts} />
         </section>
         {/* <section className="artisans section-pad" id="artisans">
           <div className="container">

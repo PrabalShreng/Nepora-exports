@@ -56,60 +56,6 @@ export const recognition = [
     alt: "Artisan hands working at a traditional loom",
   },
 ];
-export const crafts = {
-  Women: [
-    { title: "Basket Weave Pashmina", image: asset(61) },
-    { title: "Multicolor Handwoven Striped Pashmina", image: asset(60) },
-    { title: "Diamond Weave Pashmina", image: asset(5) },
-    { title: "Plain Solid Pashmina Shawl", image: asset(49) },
-    { title: "Plain Weave Pashmina Shawl", image: asset(30) },
-    { title: "Solid Pashmina Shawl", image: asset(27) },
-    { title: "Ring shawl Pashmina", image: asset(31) },
-  ],
-  Men: [
-    { title: "Reversible Two-Tone Pashmina", image: asset(7) },
-    { title: "Windowpane Check Pashmina", image: asset(13) },
-    { title: "Solid Twill Weave Pashmina", image: asset(50) },
-    { title: "Herringbone Weave Pashmina", image: asset(46) },
-  ],
-};
-export const heritage = [
-  // Choose each product's image below: asset(1) uses /Img/IMG-1.jpg.
-  {
-    title: "Border / Palla",
-    description: "A graceful border that frames every gesture.",
-    image: asset(1),
-  },
-  {
-    title: "All Over / Jaal",
-    description: "An all-over pattern of patient, intricate detail.",
-    image: asset(9),
-  },
-  {
-    title: "Jamawar",
-    description: "Rich motifs with a story in every weave.",
-    image: asset(16),
-  },
-  {
-    title: "Kalamkari",
-    description: "Hand-drawn artistry meets the softness of Pashmina.",
-    image: asset(4),
-  },
-  {
-    title: "Zari / Tilla",
-    description: "A quiet glimmer of metallic thread.",
-    image: asset(5),
-  },
-  {
-    title: "Kani",
-    description: "Colour and pattern brought together on the loom.",
-    image: asset(6),
-  },
-].map((product) => ({
-  ...product,
-  href: "/collections",
-  alt: `Editorial photograph of textile for ${product.title}`,
-}));
 export const featured = [
   {
     title: "The Heirloom Edit",
@@ -127,50 +73,6 @@ export const featured = [
     href: "/collections",
   },
 ];
-export const products = [
-  // Set each product's gallery here. Use asset(1) for /Img/IMG-1.jpg.
-  // The first image is also the collection card image. Keep at least one image.
-  {
-    name: "The Saffron Dawn Shawl",
-    category: "Shawls",
-    images: [asset(1), asset(2), asset(3)],
-  },
-  {
-    name: "The Kashmir Bloom Wrap",
-    category: "Wraps",
-    images: [asset(2), asset(3), asset(4)],
-  },
-  {
-    name: "The Evening Plum Pashmina",
-    category: "Scarves",
-    images: [asset(3), asset(4), asset(5)],
-  },
-  {
-    name: "The Willow Weave Scarf",
-    category: "Men",
-    images: [asset(4), asset(5), asset(6)],
-  },
-  {
-    name: "The Rose Mist Shawl",
-    category: "Wraps",
-    images: [asset(5), asset(6), asset(7)],
-  },
-  {
-    name: "The Heritage Border Wrap",
-    category: "Wraps",
-    images: [asset(6), asset(7), asset(8)],
-  },
-].map(({ name, category, images }, i) => ({
-  id: `p${i}`,
-  slug: name.toLowerCase().replaceAll(" ", "-"),
-  name,
-  category,
-  material: "Handwoven Pashmina",
-  image: images[0],
-  images,
-  alt: `Pashmina photograph for ${name}`,
-  href: `/collections/${name.toLowerCase().replaceAll(" ", "-")}`,
-}));
 // export const artisans = [
 //   {
 //     name: "Zahoor Ahmad",

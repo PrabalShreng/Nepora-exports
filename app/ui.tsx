@@ -373,7 +373,7 @@ export function Header() {
 export function Crafts({
   data,
 }: {
-  data: Record<"Women" | "Men", { title: string; image: string }[]>;
+  data: Record<"Women" | "Men", { title: string; image: string; href: string; alt: string }[]>;
 }) {
   const [tab, setTab] = useState<"Women" | "Men">("Women");
   return (
@@ -395,11 +395,11 @@ export function Crafts({
         label={`${tab} craft collections`}
         kind="cards"
         items={data[tab].map((item) => (
-          <Link className="craft-card" href="/collections" key={item.title}>
+          <Link className="craft-card" href={item.href} key={item.href}>
             <div className="image-frame craft-image">
               <Image
                 src={item.image}
-                alt={`Editorial photograph placeholder for ${item.title}`}
+                alt={item.alt}
                 fill
                 sizes="(max-width: 640px) 78vw, 25vw"
                 className="object-cover"

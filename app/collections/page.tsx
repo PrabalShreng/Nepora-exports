@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Header, FloatingActions } from '../ui';
 import { SiteFooter } from '../components/site-footer';
-import { products } from '../data';
+import { allProducts } from '../productdata';
 
 export const metadata: Metadata = {
   title: 'Pashmina Collections | Nepora Exports',
@@ -19,7 +19,7 @@ export default async function CollectionsPage({ searchParams }: { searchParams: 
   const query = (params.q ?? '').trim().toLowerCase();
   const category = categories.includes(params.category ?? '') ? params.category! : 'All';
   const sort = params.sort ?? 'featured';
-  const filtered = products.filter(piece => (category === 'All' || piece.category === category) && (!query || `${piece.name} ${piece.material} ${piece.category}`.toLowerCase().includes(query)));
+  const filtered = allProducts.filter(piece => (category === 'All' || piece.category === category) && (!query || `${piece.name} ${piece.material} ${piece.category}`.toLowerCase().includes(query)));
   if (sort === 'name') filtered.sort((a, b) => a.name.localeCompare(b.name));
 
   return <>
