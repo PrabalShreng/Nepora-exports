@@ -161,7 +161,7 @@ export const faqs = [
       "Yes. Visitors from any country can contact us to learn more about the collection and its craft.",
   },
   {
-    question: "Can I give a Pashmina as a gift?",
+    question: "Can I give a Pashminaa as a gift?",
     answer:
       "Yes. A handwoven Pashmina is a thoughtful gift for milestones and celebrations.",
   },
