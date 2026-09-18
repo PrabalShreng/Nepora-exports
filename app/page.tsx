@@ -17,7 +17,7 @@ import {
   heritage,
   featured,
   products,
-  artisans,
+  // artisans,
   articles,
   faqs,
 } from "./data";
@@ -101,9 +101,9 @@ export default function Home() {
                   {img(v.image, v.alt)}
                 </div>
                 <div className="recognition-copy">
-                  <span className="eyebrow">
+                  {/* <span className="eyebrow">
                     {v.year} / THE NEPORA EXPORTS JOURNAL
-                  </span>
+                  </span> */}
                   <h3>{v.title}</h3>
                   <p>{v.description}</p>
                   <span className="slide-number">
@@ -209,7 +209,7 @@ export default function Home() {
         </section> */}
         <section className="editorial section-pad container" id="editorial">
           <div className="editorial-top">
-            {title("NOTES FROM OUR WORLD", "The Editorial")}
+            {title("NOTES FROM OUR WORLD", "Handcrafted Excellence")}
             <a className="text-link" href="#editorial">
               View All Editorials <ArrowUpRight size={17} />
             </a>
@@ -223,9 +223,9 @@ export default function Home() {
                   {img(v.image, v.alt)}
                   <span className="sr-only">Read {v.title}</span>
                 </a>
-                <span className="eyebrow">
+                {/* <span className="eyebrow">
                   {v.category} — {v.date}
-                </span>
+                </span> */}
                 <h3>{v.title}</h3>
                 <p>{v.excerpt}</p>
                 <a className="text-link" href={v.href}>
@@ -245,10 +245,7 @@ export default function Home() {
           <span className="eyebrow">OUR STORY</span>
           <h2>Art of Pashmina</h2>
           <p>
-            We believe true luxury is measured in time, care, and connection.
-            Nepora Exports brings together timeless Himalayan techniques and a
-            considered modern point of view, creating pieces to treasure and
-            pass on.
+            True luxury is woven with patience, shaped by tradition, and perfected by skilled hands. At Nepora Exports, we transform the finest Himalayan fibers into timeless pashmina that reflects elegance, authenticity, and enduring craftsmanship.
           </p>
         </section>
       </main>

@@ -1,7 +1,7 @@
 export const siteConfig = {
   brand: "Nepora Exports",
-  email: "hello@nepora.example",
-  phone: "+977 01 555 0101",
+  email: "neporaexports@gmail.com",
+  phone: "+977 9860086222",
   whatsapp: "/contact",
   social: {
     instagram: "#contact-footer",
@@ -37,7 +37,7 @@ export const navigation = [
   { label: "About Us", href: "/about" },
   { label: "Editorial", href: "/#editorial" },
 ];
-export const announcements = ["Guaranteed Authenticity", "Kathmandu, Nepal"];
+export const announcements = ["Guaranteed Authentic Pashmina, Tailored to Your Requirements", "Kathmandu, Nepal"];
 export const recognition = [
   {
     year: "2024",
@@ -52,22 +52,25 @@ export const recognition = [
     title: "An invitation to slow down",
     description:
       "We celebrate the quiet moments of weaving, finishing, and wearing something made to last.",
-    image: "/images/nep-1.png",
+    image: "/Img/IMG-69.jpg",
     alt: "Artisan hands working at a traditional loom",
   },
 ];
 export const crafts = {
   Women: [
-    { title: "Solid Pashmina", image: asset(22) },
-    { title: "Ombre Pashmina", image: asset(24) },
-    { title: "Patterned Pashmina", image: asset(45) },
-    { title: "Reversible Pashmina", image: asset(49) },
+    { title: "Basket Weave Pashmina", image: asset(61) },
+    { title: "Multicolor Handwoven Striped Pashmina", image: asset(60) },
+    { title: "Diamond Weave Pashmina", image: asset(5) },
+    { title: "Plain Solid Pashmina Shawl", image: asset(49) },
+    { title: "Plain Weave Pashmina Shawl", image: asset(30) },
+    { title: "Solid Pashmina Shawl", image: asset(27) },
+    { title: "Ring shawl Pashmina", image: asset(31) },
   ],
   Men: [
-    { title: "Classic Wraps", image: asset(10) },
-    { title: "Woven Scarves", image: asset(13) },
-    { title: "Evening Shawls", image: asset(3) },
-    { title: "Travel Layers", image: asset(46) },
+    { title: "Reversible Two-Tone Pashmina", image: asset(7) },
+    { title: "Windowpane Check Pashmina", image: asset(13) },
+    { title: "Solid Twill Weave Pashmina", image: asset(50) },
+    { title: "Herringbone Weave Pashmina", image: asset(46) },
   ],
 };
 export const heritage = [
@@ -128,57 +131,58 @@ export const products = [
   alt: `Pashmina photograph for ${name}`,
   href: `/collections/${name.toLowerCase().replaceAll(" ", "-")}`,
 }));
-export const artisans = [
-  {
-    name: "Zahoor Ahmad",
-    craft: "Master Weaver",
-    image: asset(1),
-    alt: "Folded burgundy shawl, artisan portrait placeholder",
-  },
-  {
-    name: "Nusrat Begum",
-    craft: "Needlework Artist",
-    image: asset(2),
-    alt: "Artisan hands at a loom, portrait placeholder",
-  },
-  {
-    name: "Irfan Ali",
-    craft: "Pattern Maker",
-    image: asset(3),
-    alt: "Model in an ivory shawl, artisan portrait placeholder",
-  },
-  {
-    name: "Meher Khan",
-    craft: "Finishing Artisan",
-    image: asset(4),
-    alt: "Patterned textile on a chair, artisan portrait placeholder",
-  },
-];
+// export const artisans = [
+//   {
+//     name: "Zahoor Ahmad",
+//     craft: "Master Weaver",
+//     image: asset(1),
+//     alt: "Folded burgundy shawl, artisan portrait placeholder",
+//   },
+//   {
+//     name: "Nusrat Begum",
+//     craft: "Needlework Artist",
+//     image: asset(2),
+//     alt: "Artisan hands at a loom, portrait placeholder",
+//   },
+//   {
+//     name: "Irfan Ali",
+//     craft: "Pattern Maker",
+//     image: asset(3),
+//     alt: "Model in an ivory shawl, artisan portrait placeholder",
+//   },
+//   {
+//     name: "Meher Khan",
+//     craft: "Finishing Artisan",
+//     image: asset(4),
+//     alt: "Patterned textile on a chair, artisan portrait placeholder",
+//   },
+// ];
 export const articles = [
   {
-    title: "A thread through the valley",
-    category: "CRAFT",
-    date: "12 AUG 2026",
-    excerpt: "Tracing the patient journey from fibre to finished shawl.",
+    title: "Artisan Heritage",
+    excerpt: "Handwoven with generations of craftsmanship, every piece celebrates Nepal's rich textile tradition.",
     image: asset(37),
     alt: "Editorial photograph of woven textile",
     href: "#editorial",
   },
   {
-    title: "The language of the loom",
-    category: "STORIES",
-    date: "28 JUL 2026",
-    excerpt: "What a maker sees in every small decision.",
+    title: "Exceptional Softness",
+    excerpt: "Crafted from premium natural fibers to deliver unmatched comfort and refined elegance.",
     image: asset(35),
     alt: "Editorial photograph of patterned textile",
     href: "#editorial",
   },
   {
-    title: "How to keep an heirloom",
-    category: "GUIDE",
-    date: "10 JUN 2026",
-    excerpt: "Simple ways to care for a piece made to last.",
+    title: "Signature Weaves",
+    excerpt: "Distinctive textures and intricate patterns define the beauty of authentic luxury.",
     image: asset(33),
+    alt: "Editorial photograph of burgundy textile",
+    href: "#editorial",
+  },
+  {
+    title: "Luxury Without Compromise",
+    excerpt: "Timeless pashmina designed to be treasured for years, combining elegance with lasting quality.",
+    image: asset(58),
     alt: "Editorial photograph of burgundy textile",
     href: "#editorial",
   },
