@@ -101,7 +101,7 @@ export const featured = [
 // ];
 export const articles = [
   {
-    title: "Artisan Heritage",
+    title: "Artisan Heritage aaa",
     excerpt: "Handwoven with generations of craftsmanship, every piece celebrates Nepal's rich textile tradition.",
     image: asset(37),
     alt: "Editorial photograph of woven textile",
