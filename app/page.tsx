@@ -250,6 +250,10 @@ export default function Home() {
           <p>
             True luxury is woven with patience, shaped by tradition, and perfected by skilled hands. At Nepora Exports, we transform the finest Himalayan fibers into timeless pashmina that reflects elegance, authenticity, and enduring craftsmanship.
           </p>
+          <p>
+            From Nepal to the World
+             We manufacture and export genuine pashmina directly to wholesalers, retailers, and private-label brands.
+          </p>
         </section>
       </main>
       <SiteFooter />
