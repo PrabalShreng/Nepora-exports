@@ -130,7 +130,7 @@ export default function Home() {
             </span>
             {title("THE ART OF THE EXCEPTIONAL", "One-of-a-Kind Pashmina")}
             <p>
-              Six expressions of an enduring craft, each with its own natural colour.
+              Six expressions of an enduring craft, with printed patterns and hand-embroidered details that make each piece unique. 
             </p>
           </div>
           <div className="heritage-grid">
@@ -180,7 +180,8 @@ export default function Home() {
           </div>
         </section> */}
         <section className="products section-pad container" id="products">
-          {title("A CLOSER LOOK", "Selected Pashmina")}
+          {title("A CLOSER LOOK", "Selected Pashmina with its natural colours")}
+          
           <ProductCarousel products={selectedPashminaProducts} />
         </section>
         {/* <section className="artisans section-pad" id="artisans">
