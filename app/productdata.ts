@@ -303,7 +303,7 @@ export const oneOfAKindProducts = defineProducts([
   {
     slug: "heritage-all-over-jaal",
     name: "Herringbone Color-Block Pashmina Stole",
-    category: "Shawls",
+    category: "Scarves",
     material: "Handwoven Pashmina",
     description: "Crafted with a refined herringbone weave and modern color-block design, this versatile pashmina combines classic craftsmanship with contemporary style.",
     notes: "Explore the All Over / Jaal design in the gallery and contact us for details about this piece.",
