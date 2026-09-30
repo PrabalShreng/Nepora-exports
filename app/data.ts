@@ -1,6 +1,6 @@
 export const siteConfig = {
   brand: "Nepora Exports",
-  email: "info@neporaexports.com  sales@neporaexports.com",
+  email: "info@neporaexports.com",
   phone: "+977 9860086222",
   whatsapp: "/contact",
   social: {
