@@ -8,7 +8,7 @@ export const siteConfig = {
     facebook: "#contact-footer",
     linkedin: "#contact-footer",
   },
-  showReviews: true,
+  showReviews: false,
   showContact: true,
   showAnnouncement: true,
   heroVideo: false,
