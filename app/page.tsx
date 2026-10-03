@@ -130,7 +130,8 @@ export default function Home() {
             </span>
             {title("THE ART OF THE EXCEPTIONAL", "One-of-a-Kind Pashmina")}
             <p>
-              Six expressions of an enduring craft, each with its own natural colour.
+              Six expressions of an enduring craft, with printed patterns and
+              hand-embroidered details that make each piece unique.
             </p>
           </div>
           <div className="heritage-grid">
@@ -180,7 +181,8 @@ export default function Home() {
           </div>
         </section> */}
         <section className="products section-pad container" id="products">
-          {title("A CLOSER LOOK", "Selected Pashmina")}
+          {title("A CLOSER LOOK", "Selected Pashmina with its natural colours")}
+
           <ProductCarousel products={selectedPashminaProducts} />
         </section>
         {/* <section className="artisans section-pad" id="artisans">
@@ -247,7 +249,18 @@ export default function Home() {
           <span className="eyebrow">OUR STORY</span>
           <h2>Art of Pashmina</h2>
           <p>
-            True luxury is woven with patience, shaped by tradition, and perfected by skilled hands. At Nepora Exports, we transform the finest Himalayan fibers into timeless pashmina that reflects elegance, authenticity, and enduring craftsmanship.
+            Nepal has always been a land of extraordinary craftsmanship. From
+            the soft Himalayan Pashmina to handwoven textiles and traditional
+            handicrafts, every piece reflects generations of skill, patience,
+            and culture.
+          </p>
+          <p>
+            Nepora Exports was founded with a simple vision to connect these
+            authentic Nepalese creations with people around the world while
+            creating lasting opportunities for local artisans. We believe
+            handmade products are more than beautiful objects. They carry the
+            story of the people who create them, the traditions they preserve,
+            and the communities they support.
           </p>
         </section>
       </main>
@@ -271,18 +284,22 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://neporaexports.com.np",
+            "@context": "https://neporaexports.com",
             "@graph": [
               {
                 "@type": "Organization",
                 name: "Nepora Exports Pvt. Ltd.",
-                url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://neporaexports@gmail.com",
+                url:
+                  process.env.NEXT_PUBLIC_SITE_URL ??
+                  "https://info@neporaexports.com",
                 email: siteConfig.email,
               },
               {
                 "@type": "WebSite",
                 name: "Nepora Exports Pvt. Ltd.",
-                url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://neporaexports.com.np",
+                url:
+                  process.env.NEXT_PUBLIC_SITE_URL ??
+                  "https://neporaexports.com",
               },
             ],
           }),
